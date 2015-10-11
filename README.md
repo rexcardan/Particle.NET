@@ -20,6 +20,7 @@ Find out more at https://docs.particle.io/guide/getting-started/intro/photon/
                 foreach(var fun in info.Functions)
                 {
                     var fArgs = "functionArgs";
+                    //ex. d.CallFunction("turnOn","light1");
                     var resp = d.CallFunction(fun, fArgs);
                     Console.WriteLine(resp.ReturnValue);        
                 }
